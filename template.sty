@@ -1,0 +1,35 @@
+%--------------------------------------------------------------
+%include style files
+%--------------------------------------------------------------
+
+\usepackage{multicol}
+\usepackage{epsf}
+\usepackage[dvipdfmx]{graphics}
+\usepackage[dvipdfmx]{color}
+%\usepackage{cite}
+%\usepackage{url}
+\usepackage{boxedminipage}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{ascmac}
+\usepackage{enumerate}
+
+%--------------------------------------------------------------
+%tbcaptionとfgcaptionの定義
+%--------------------------------------------------------------
+
+\def\tbcaption{\def\@captype{table}\caption}
+\def\fgcaption{\def\@captype{figure}\caption}
+
+\def\url#1{
+	\texttt{#1}
+}
+
+\def\term#1{
+	{\bf #1}
+}
+
+\def\path#1{
+	\texttt{#1}
+}
