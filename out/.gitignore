@@ -1,0 +1,10 @@
+# latexコンパイル時に作成されるファイル
+*.aux
+*.dvi
+*.fdb_latexmk
+*.fls
+*.log
+*.gz
+*.toc
+*.bbl
+*.blg
