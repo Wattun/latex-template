@@ -1,2 +1,23 @@
-\chapter{\LaTeX}
-\LaTeX では、このように書く。
+\chapter{数式}
+
+\LaTeX で数式を書く時には、文中に含まれる行内数式と、独立した行に置かれる別行立て数式がある。
+
+\section{行内数式}
+
+Albert Einsteinは1907年に、「質量とエネルギーの等価性」とその定量関係を表す、$E=mc^2$という等式を発表した。
+
+上の例のように行内数式を記述するには、数式を\$ で囲う。
+
+\section{別行立て数式}
+
+流体の運動を記述する2階非線形偏微分方程式であるナビエ-ストークス方程式は、以下のように記述される。
+
+\begin{multline*}
+  \frac{D \bm{v}}{Dt} = - \frac{1}{\rho}\mathrm{grad}p + \frac{\mu}{\rho}\Delta\bm{v}
+  + \frac{\lambda + \mu}{\rho}\mathrm{grad}\Theta +\frac{\Theta}{\rho}\mathrm{grad}(\lambda + \mu)\\
+  + \frac{1}{\rho}\mathrm{grad}(\bm{v}\cdot\mathrm{grad}\mu)
+  + \frac{1}{\mu}\mathrm{rot}(\bm{v}\times\mathrm{grad}\mu)
+  - \frac{1}{\rho}\bm{v}\Delta\mu + \bm{g}
+\end{multline*}
+
+上の例のように別行立て数式を記述するには、数式を\verb|\|\{begin\}equationと\verb|\|\{end\}equationで囲う。
